@@ -1,0 +1,1 @@
+# panel-equinor-branding
