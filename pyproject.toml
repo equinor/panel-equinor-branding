@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "panel-equinor-branding"
+version = "0.1.0"
+description = "Equinor branding helpers for Panel and panel-material-ui applications"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "panel",
+    "panel-material-ui",
+    "hvplot",
+    "pandas",
+    "numpy",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["brand", "brand.*"]
+
+[tool.setuptools.package-data]
+brand = ["assets/*.css", "assets/*.ico", "assets/*.png"]
