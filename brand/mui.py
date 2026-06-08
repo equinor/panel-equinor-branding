@@ -173,6 +173,22 @@ def _build_theme_config(
                     },
                 },
             },
+            "MuiAppBar": {
+                "styleOverrides": {
+                    "root": {
+                        "backgroundColor": background_paper,
+                        "backgroundImage": "none",
+                        "color": text_primary,
+                        "boxShadow": "none",
+                        "borderBottom": f"1px solid {divider}",
+                    },
+                    "colorPrimary": {
+                        "backgroundColor": background_paper,
+                        "backgroundImage": "none",
+                        "color": text_primary,
+                    },
+                },
+            },
             "MuiCard": {
                 "styleOverrides": {
                     "root": {
