@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -145 390 175" width="390" height="175" role="img" aria-label="Juno wordmark with small leaf feathers growing clockwise over the o">
+  <!--
+    Juno lockup v2 — same geometry as v1 (angles 125° → 17°, 27° steps, 10° clockwise lean,
+    base margins 16 → 10) but the leaves are smaller overall and grow more:
+    scales .12 → .34 (lengths 19 → 54). Tips on 71 → 100.
+    Smallest → largest: data teal, data teal, HoloViz blue, Jupyter orange, Nebari purple.
+    Eye-spots are holes. Text and ring use currentColor (set `color` on the wrapper).
+    DRAFT: outline the text to paths before shipping.
+  -->
+  <defs>
+    <path id="leaf-eyed" fill-rule="evenodd"
+      d="M-9 0 C -18 -40, -32 -65, -32 -95 C -32 -125, -18 -150, 0 -158 C 18 -150, 32 -125, 32 -95 C 32 -65, 18 -40, 9 0 A 9 9 0 0 1 -9 0 Z
+         M0 -122 a 12 18 0 1 0 0.01 0 Z"/>
+  </defs>
+
+  <text x="0" y="0" font-family="'Inter Tight', Inter, 'Segoe UI', system-ui, sans-serif"
+        font-weight="700" font-size="120" textLength="196" lengthAdjust="spacingAndGlyphs"
+        fill="currentColor">Jun</text>
+
+  <circle cx="240" cy="-32" r="26" fill="none" stroke="currentColor" stroke-width="20"/>
+
+  <!-- angle a, scale s, base radius R; base = (240 + R cos a, -32 - R sin a), rotate = 100 - a
+       125° .12 52 | 98° .17 50 | 71° .23 48 | 44° .30 47 | 17° .34 46 -->
+  <g transform="translate(210.2 -74.6) rotate(-25) scale(0.12)"><use href="#leaf-eyed" fill="#ff1243"/></g>
+  <g transform="translate(233.0 -81.5) rotate(2)   scale(0.17)"><use href="#leaf-eyed" fill="#17a589"/></g>
+  <g transform="translate(255.6 -77.4) rotate(29)  scale(0.23)"><use href="#leaf-eyed" fill="#3a86c8"/></g>
+  <g transform="translate(273.8 -64.7) rotate(56)  scale(0.30)"><use href="#leaf-eyed" fill="#f37726"/></g>
+  <g transform="translate(284.0 -45.5) rotate(83)  scale(0.34)"><use href="#leaf-eyed" fill="#9547c0"/></g>
+</svg>

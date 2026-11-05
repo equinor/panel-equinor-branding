@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-190 -200 380 235" width="380" height="235" role="img" aria-label="Juno leaf-feather mark">
+  <!--
+    Juno mark — five leaf-shaped feathers fanned in a semicircle around a centre knot.
+    Bases sit on a 30px ring; 32° steps so the leaves clear each other.
+      centre  #9547c0  Nebari purple   (platform; = theme primary default)
+      inner L #f37726  Jupyter orange  (JupyterHub)
+      inner R #3a86c8  HoloViz blue    (HoloViz / Panel)
+      outer   #17a589  data teal       (ADX + Cosmos today, Neo4j later — same colour)
+    Eye-spots are holes. Light-background variant (dark knot).
+  -->
+  <defs>
+    <path id="leaf-eyed" fill-rule="evenodd"
+      d="M-9 0 C -18 -40, -32 -65, -32 -95 C -32 -125, -18 -150, 0 -158 C 18 -150, 32 -125, 32 -95 C 32 -65, 18 -40, 9 0 A 9 9 0 0 1 -9 0 Z
+         M0 -122 a 12 18 0 1 0 0.01 0 Z"/>
+  </defs>
+
+  <g transform="rotate(-64) translate(0 -30)"><use href="#leaf-eyed" fill="#17a589"/></g>
+  <g transform="rotate(-32) translate(0 -30)"><use href="#leaf-eyed" fill="#f37726"/></g>
+  <g transform="translate(0 -30) scale(1.06)"><use href="#leaf-eyed" fill="#9547c0"/></g>
+  <g transform="rotate(32) translate(0 -30)"><use href="#leaf-eyed" fill="#3a86c8"/></g>
+  <g transform="rotate(64) translate(0 -30)"><use href="#leaf-eyed" fill="#17a589"/></g>
+
+  <circle cx="0" cy="0" r="16" fill="#262628"/>
+</svg>

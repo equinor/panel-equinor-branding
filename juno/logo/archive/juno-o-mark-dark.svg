@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -102 160 160" width="160" height="160" role="img" aria-label="Juno o-mark: ring with leaf feathers sweeping clockwise">
+  <!-- Dark-background variant: light ring, lightened layer colours, holes for eyes. -->
+  <defs>
+    <path id="leaf-eyed" fill-rule="evenodd"
+      d="M-9 0 C -18 -40, -32 -65, -32 -95 C -32 -125, -18 -150, 0 -158 C 18 -150, 32 -125, 32 -95 C 32 -65, 18 -40, 9 0 A 9 9 0 0 1 -9 0 Z
+         M0 -122 a 12 18 0 1 0 0.01 0 Z"/>
+  </defs>
+
+  <circle cx="0" cy="0" r="26" fill="none" stroke="#f8f8f8" stroke-width="20"/>
+
+  <g transform="translate(-29.8 -42.6) rotate(-25) scale(0.12)"><use href="#leaf-eyed" fill="#1fbf9f"/></g>
+  <g transform="translate(-7.0 -49.5)  rotate(2)   scale(0.17)"><use href="#leaf-eyed" fill="#1fbf9f"/></g>
+  <g transform="translate(15.6 -45.4)  rotate(29)  scale(0.23)"><use href="#leaf-eyed" fill="#5b9fdb"/></g>
+  <g transform="translate(33.8 -32.7)  rotate(56)  scale(0.30)"><use href="#leaf-eyed" fill="#f58a45"/></g>
+  <g transform="translate(44.0 -13.5)  rotate(83)  scale(0.34)"><use href="#leaf-eyed" fill="#a85fd0"/></g>
+</svg>

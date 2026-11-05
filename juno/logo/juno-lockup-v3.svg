@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -145 390 175" width="390" height="175" role="img" aria-label="Juno wordmark with leaf feathers growing clockwise over the o, sweep centred">
+  <!--
+    Juno lockup v3 — lockup v2 sizes (scales .12 → .34) with the o-mark v3 balance: the
+    sweep is rotated back 13° so it is centred over the top of the o (angles 138° → 30°,
+    27° steps) and the clockwise lean eased to 6°. Nothing under the letters; the first
+    leaf hovers just above the n–o gap.
+    Smallest → largest: Equinor red (origin), data teal (ADX/Cosmos → Neo4j),
+    HoloViz blue, Jupyter orange, Nebari purple.
+    Eye-spots are holes. Text and ring use currentColor (set `color` on the wrapper).
+    DRAFT: outline the text to paths before shipping.
+  -->
+  <defs>
+    <path id="leaf-eyed" fill-rule="evenodd"
+      d="M-9 0 C -18 -40, -32 -65, -32 -95 C -32 -125, -18 -150, 0 -158 C 18 -150, 32 -125, 32 -95 C 32 -65, 18 -40, 9 0 A 9 9 0 0 1 -9 0 Z
+         M0 -122 a 12 18 0 1 0 0.01 0 Z"/>
+  </defs>
+
+  <text x="0" y="0" font-family="'Inter Tight', Inter, 'Segoe UI', system-ui, sans-serif"
+        font-weight="700" font-size="120" textLength="196" lengthAdjust="spacingAndGlyphs"
+        fill="currentColor">Jun</text>
+
+  <circle cx="240" cy="-32" r="26" fill="none" stroke="currentColor" stroke-width="20"/>
+
+  <!-- angle a, scale s, base radius R; base = (240 + R cos a, -32 - R sin a), rotate = 96 - a
+       138° .12 52 | 111° .17 50 | 84° .23 48 | 57° .30 47 | 30° .34 46 -->
+  <g transform="translate(201.4 -66.8) rotate(-42) scale(0.12)"><use href="#leaf-eyed" fill="#ff1243"/></g>
+  <g transform="translate(222.1 -78.7) rotate(-15) scale(0.17)"><use href="#leaf-eyed" fill="#17a589"/></g>
+  <g transform="translate(245.0 -79.7) rotate(12)  scale(0.23)"><use href="#leaf-eyed" fill="#3a86c8"/></g>
+  <g transform="translate(265.6 -71.4) rotate(39)  scale(0.30)"><use href="#leaf-eyed" fill="#f37726"/></g>
+  <g transform="translate(279.8 -55.0) rotate(66)  scale(0.34)"><use href="#leaf-eyed" fill="#9547c0"/></g>
+</svg>

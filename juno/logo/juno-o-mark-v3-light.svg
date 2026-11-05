@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-68 -104 172 172" width="172" height="172" role="img" aria-label="Juno o-mark v3: leaf sweep centred over the ring">
+  <!--
+    Juno o-mark v3 — v2 proportions (ring outer 30 / stroke 16, leaves .16 → .44) but the
+    whole sweep is rotated 18° anticlockwise so it is centred over the top of the ring
+    (angles 143° → 35°) instead of hanging off the right, and the clockwise lean is eased
+    from 10° to 6°. The purple leaf is trimmed .46 → .44. Light-background variant.
+  -->
+  <defs>
+    <path id="leaf-eyed" fill-rule="evenodd"
+      d="M-9 0 C -18 -40, -32 -65, -32 -95 C -32 -125, -18 -150, 0 -158 C 18 -150, 32 -125, 32 -95 C 32 -65, 18 -40, 9 0 A 9 9 0 0 1 -9 0 Z
+         M0 -122 a 12 18 0 1 0 0.01 0 Z"/>
+  </defs>
+
+  <circle cx="0" cy="0" r="22" fill="none" stroke="#262628" stroke-width="16"/>
+
+  <!-- angle a, scale s, base radius R; base = (R cos a, -R sin a), rotate = 96 - a
+       143° .16 44 | 116° .23 41 | 89° .31 39 | 62° .40 38 | 35° .44 38 -->
+  <g transform="translate(-35.1 -26.5) rotate(-47) scale(0.16)"><use href="#leaf-eyed" fill="#ff1243"/></g>
+  <g transform="translate(-18.0 -36.9) rotate(-20) scale(0.23)"><use href="#leaf-eyed" fill="#17a589"/></g>
+  <g transform="translate(0.7 -39.0)   rotate(7)   scale(0.31)"><use href="#leaf-eyed" fill="#3a86c8"/></g>
+  <g transform="translate(17.8 -33.6)  rotate(34)  scale(0.40)"><use href="#leaf-eyed" fill="#f37726"/></g>
+  <g transform="translate(31.1 -21.8)  rotate(61)  scale(0.44)"><use href="#leaf-eyed" fill="#9547c0"/></g>
+</svg>

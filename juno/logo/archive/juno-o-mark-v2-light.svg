@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-56 -104 172 172" width="172" height="172" role="img" aria-label="Juno o-mark v2: smaller ring, larger leaf feathers sweeping clockwise">
+  <!--
+    Juno o-mark v2 — ring shrunk (outer radius 30, stroke 16) and leaves scaled up ~1.35×
+    (scales .16 → .46, lengths 25 → 73). Same angles (125° → 17°, 27° steps), same 10°
+    clockwise lean; base margins off the ring 14, 11, 9, 8, 8. Light-background variant.
+  -->
+  <defs>
+    <path id="leaf-eyed" fill-rule="evenodd"
+      d="M-9 0 C -18 -40, -32 -65, -32 -95 C -32 -125, -18 -150, 0 -158 C 18 -150, 32 -125, 32 -95 C 32 -65, 18 -40, 9 0 A 9 9 0 0 1 -9 0 Z
+         M0 -122 a 12 18 0 1 0 0.01 0 Z"/>
+  </defs>
+
+  <circle cx="0" cy="0" r="22" fill="none" stroke="#262628" stroke-width="16"/>
+
+  <!-- angle a, scale s, base radius R; base = (R cos a, -R sin a), rotate = 100 - a
+       125° .16 44 | 98° .23 41 | 71° .31 39 | 44° .40 38 | 17° .46 38 -->
+  <g transform="translate(-25.2 -36.0) rotate(-25) scale(0.16)"><use href="#leaf-eyed" fill="#17a589"/></g>
+  <g transform="translate(-5.7 -40.6)  rotate(2)   scale(0.23)"><use href="#leaf-eyed" fill="#17a589"/></g>
+  <g transform="translate(12.7 -36.9)  rotate(29)  scale(0.31)"><use href="#leaf-eyed" fill="#3a86c8"/></g>
+  <g transform="translate(27.3 -26.4)  rotate(56)  scale(0.40)"><use href="#leaf-eyed" fill="#f37726"/></g>
+  <g transform="translate(36.3 -11.1)  rotate(83)  scale(0.46)"><use href="#leaf-eyed" fill="#9547c0"/></g>
+</svg>
