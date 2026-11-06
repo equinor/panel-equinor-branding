@@ -1,0 +1,17 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.6.5
+_src_path: gh:jupyterlab/extension-template
+advanced: false
+author_email: muv@equinor.com
+author_name: Equinor Juno team
+has_ai_rules: false
+has_binder: false
+has_settings: false
+kind: theme
+labextension_name: jupyterlab-juno-theme
+project_short_description: 'Juno theme for JupyterLab: light/dark palette on Nebari
+    purple, Juno logo and favicon.'
+python_name: jupyterlab_juno_theme
+repository: https://github.com/equinor/panel-equinor-branding
+test: false
+

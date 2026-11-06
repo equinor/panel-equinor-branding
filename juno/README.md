@@ -7,8 +7,9 @@ Equinor and Juno brands into one library.
 
 | Folder | What |
 |---|---|
-| [`logo/`](logo/) | The settled marks (SVG) + `preview.html` to view them on light/dark, in a login card, at favicon sizes |
+| [`logo/`](logo/) | The settled marks (SVG + PNG renders) + `preview.html`; palette and **Juno primary** decision in its README |
 | [`logo/archive/`](logo/archive/) | Earlier iterations, kept for comparison only |
+| [`jupyterlab-juno-theme/`](jupyterlab-juno-theme/) | Prebuilt JupyterLab 4 extension: Juno Light/Dark themes, o-mark logo, favicon. Built with `jlpm build:prod && uv build --wheel`; the wheel is vendored into `juno-images/branding/wheels/` |
 | [`keycloak/`](keycloak/) | Exported Keycloak *Theme customization* preset (JSON) once published on a realm — the re-seed source after a cluster teardown |
 
 Consumers today and how they get the files:

@@ -22,6 +22,20 @@ see every file on light and dark backgrounds, in a mock login card, and at favic
 
 ## Colour = platform layer (smallest → largest leaf)
 
+**Decision 2026-11-06: the Juno primary is Nebari's design-system purple** — `#9547c0`
+(hover `#77399a`) on light, `#b053e2` (hover `#c575f4`) on dark. These are the
+nebari-keycloak-theme defaults, which are built on the `@nebari` design registry, and the same
+hue as the centre/largest leaf. **Not** the older brand purple `#ba18da`/`#ba18dd` that
+jhub-apps' `DEFAULT_THEME` and the Nebari logo background still use — align those to
+`#9547c0` wherever we control them (hub `template_vars`, lab theme).
+
+| Role | Light | Dark | nebari-design token (`registry/nebari/globals.css`) |
+|---|---|---|---|
+| primary | `#9547c0` | `#b053e2` | `oklch(55.06% 0.1886 311.45)` primary-magenta-600 / `oklch(61.98% 0.2159 311.67)` -500 |
+| primary hover | `#77399a` | `#c575f4` | primary-magenta-700 / -400 |
+| text / ring | `#262628` | `#f8f8f8` | zinc-950 / zinc-50 (`--foreground`) |
+| page background | `#f8f8f8` | `#262628` | zinc-50 / zinc-950 (`--background`) |
+
 | Leaf | Hex (light bg) | Hex (dark bg) | Stands for |
 |---|---|---|---|
 | 1 | `#ff1243` | `#ff4d6d` | Equinor (Energy Red) — the origin |
