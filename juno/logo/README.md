@@ -10,6 +10,15 @@ see every file on light and dark backgrounds, in a mock login card, and at favic
 | `juno-lockup-v3.svg` | **Wordmark.** "Jun" + the o as a ring with five leaves sweeping clockwise over it. Text/ring use `currentColor`; wrap in `<object>` or inline `<svg>` and set `color` (in `<img>` it renders black). Text is live type — outline to paths before shipping. |
 | `juno-o-mark-v3-light.svg` / `-dark.svg` | **Mark / favicon.** The o and its sweep, square-ish, ring in dark or light. SVG favicons work in Edge/Chrome/Firefox; make a PNG/ICO for Safari and for uploaders that reject SVG. |
 | `archive/` | Superseded iterations: lockup v1/v2, o-mark v1/v2, and the first symmetric five-leaf fan (`juno-mark-*`). |
+| `png/` | Transparent PNG renders for uploaders that reject SVG (Keycloak Theme customization takes PNG/JPEG/WebP only: logos ≤ 640×240, browser icon ≤ 256×256). Regenerate with `./render-png.sh` (headless Edge, no ImageMagick needed). The lockup PNGs have the text colour baked in: `-light-` = dark text for light cards, `-dark-` = light text for dark cards. |
+
+## Keycloak upload map
+
+| Theme customization field | File |
+|---|---|
+| Login card logo, light appearance | `png/juno-o-mark-v3-light-512.png` (or `png/juno-lockup-v3-light-1068x480.png` with the *wordmark* crop) |
+| Login card logo, dark appearance | `png/juno-o-mark-v3-dark-512.png` (or the `-dark-` lockup) |
+| Browser icon (favicon) | `png/juno-o-mark-v3-light-256.png` |
 
 ## Colour = platform layer (smallest → largest leaf)
 
