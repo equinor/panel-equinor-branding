@@ -6,10 +6,16 @@ Juno branding for JupyterLab 4 as one prebuilt extension:
   palette (Nebari design-system purple primary, data teal, HoloViz blue, Jupyter orange,
   Equinor red; zinc neutrals). See `style/juno.css`; palette source of truth is
   [`../logo/README.md`](../logo/README.md).
-- **Logo** — the Juno o-mark replaces the Jupyter logo top-left (the stock
-  `@jupyterlab/application-extension:logo` plugin is disabled via `package.json`).
+- **Logo** — the Juno o-mark replaces the Jupyter logo top-left and links to the hub home
+  (the stock `@jupyterlab/application-extension:logo` **and** `jupyterlab-nebari-mode:logo`
+  from Nebari's base image are disabled via `package.json`, so only one logo renders).
+- **Splash** — the loading screen's orbit animation circles the Juno mark instead of the
+  Jupyter logo (`@jupyterlab/apputils-extension:splash` disabled, same CSS reused).
 - **Favicon** — the o-mark as the tab icon, with an orange-dot busy variant that JupyterLab's
   own busy toggle picks up.
+- **Launcher header** — the o-mark + "Juno" at the top of the launcher, pure CSS
+  (`style/launcher.css`), for both JupyterLab's stock launcher and Nebari's
+  `jupyterlab-launchpad`.
 
 Generated from [jupyterlab/extension-template](https://github.com/jupyterlab/extension-template)
 (`kind: theme`), modelled on [catppuccin/jupyterlab](https://github.com/catppuccin/jupyterlab).

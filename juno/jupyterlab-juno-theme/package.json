@@ -1,6 +1,6 @@
 {
     "name": "jupyterlab-juno-theme",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "description": "Juno theme for JupyterLab: light/dark palette on Nebari purple, Juno logo and favicon.",
     "keywords": [
         "jupyter",
@@ -56,7 +56,11 @@
     "dependencies": {
         "@jupyterlab/application": "^4.0.0",
         "@jupyterlab/apputils": "^4.0.0",
+        "@jupyterlab/coreutils": "^6.0.0",
+        "@jupyterlab/translation": "^4.0.0",
         "@jupyterlab/ui-components": "^4.0.0",
+        "@lumino/disposable": "^2.0.0",
+        "@lumino/polling": "^2.0.0",
         "@lumino/widgets": "^2.0.0"
     },
     "devDependencies": {
@@ -97,7 +101,9 @@
         "outputDir": "jupyterlab_juno_theme/labextension",
         "themePath": "style/index.css",
         "disabledExtensions": [
-            "@jupyterlab/application-extension:logo"
+            "@jupyterlab/application-extension:logo",
+            "@jupyterlab/apputils-extension:splash",
+            "jupyterlab-nebari-mode:logo"
         ]
     },
     "prettier": {
